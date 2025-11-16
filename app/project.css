@@ -1,0 +1,122 @@
+/* Imports and your existing styles */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+.sticky-cards {
+    /* ... (all your .sticky-card styles remain) ... */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.sticky-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    gap: 3rem;
+    will-change: transform;
+}
+
+.sticky-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: var(--after-opacity, 0);
+    transition: opacity 0.1s ease;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.sticky-card-index {
+    flex: 1;
+    @apply pt-24 text-8xl font-bold text-white/80;
+}
+
+.sticky-card-content {
+    flex: 4;
+    padding-top: 1.5rem;
+    @apply pt-24;
+}
+
+.sticky-card-content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.sticky-card-header {
+    width: 100%;
+    @apply text-4xl font-bold mb-4;
+}
+
+.sticky-card-img {
+    width: 100%;
+    height: 100%;
+}
+
+.sticky-card-img img {
+    aspect-ratio: 5/3;
+    @apply w-full h-full object-cover rounded-2xl border border-white/10;
+}
+
+.sticky-card-copy {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.sticky-card-copy-title {
+    flex: 2;
+}
+
+.sticky-card-copy-description {
+    flex: 4;
+    @apply text-lg text-white/80;
+}
+
+.sticky-card-copy-title p {
+    text-transform: uppercase;
+    font-weight: 650;
+    @apply text-sm text-white/50;
+}
+
+
+
+/* Your existing media query */
+@media (max-width: 1000px) {
+    .sticky-card {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .sticky-card-content-wrapper {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .sticky-card-copy {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .sticky-card-index {
+        flex: 1;
+    }
+}
+
+.animate-scroll-project {
+    animation: scroll 70s linear infinite;
+    animation-direction: var(--animation-direction, normal);
+    display: flex;
+}
