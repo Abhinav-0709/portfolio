@@ -45,7 +45,7 @@ const AnimatedTitle = ({ text }: { text: string }) => {
     return (
         <h2
             ref={container}
-            className="text-6xl md:text-6xl font-bold uppercase overflow-hidden"
+            className="text-4xl md:text-6xl font-bold uppercase overflow-hidden"
             aria-label={text}
         >
             {textSpans}
