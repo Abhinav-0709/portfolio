@@ -14,10 +14,10 @@ const AnimatedTitle = ({ text }: { text: string }) => {
         .map((char, index) => (
             <span
                 key={index}
-                className="translate-y-full inline-block" 
+                className="translate-y-full inline-block"
                 data-char={char}
             >
-                {char === " " ? "\u00A0" : char} 
+                {char === " " ? "\u00A0" : char}
             </span>
         ));
 
@@ -32,8 +32,8 @@ const AnimatedTitle = ({ text }: { text: string }) => {
                     ease: "power3.out",
                     scrollTrigger: {
                         trigger: container.current,
-                        start: "top 90%", 
-                        end: "bottom 10%", 
+                        start: "top 90%",
+                        end: "bottom 10%",
                         toggleActions: "play reset play reset",
                     },
                 }
@@ -45,7 +45,7 @@ const AnimatedTitle = ({ text }: { text: string }) => {
     return (
         <h2
             ref={container}
-            className="text-6xl md:text-9xl font-bold uppercase overflow-hidden"
+            className="text-6xl md:text-6xl font-bold uppercase overflow-hidden"
             aria-label={text}
         >
             {textSpans}

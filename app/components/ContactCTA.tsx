@@ -62,7 +62,7 @@ export default function ContactCTA() {
             <div className="relative z-10 w-full max-w-6xl px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-16">
 
                 <div>
-                    <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight tracking-tight">
+                    <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight tracking-tight">
                         LET’S WORK<br />TOGETHER
                     </h1>
                 </div>

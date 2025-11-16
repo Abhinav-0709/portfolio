@@ -81,7 +81,7 @@ export default function Process() {
         <section id="process" className="bg-black text-white" ref={sectionRef}>
             <Container className="py-24">
                 <AnimatedTitle text="How I Work" />
-                <h3 className="text-7xl md:text-8xl font-bold uppercase text-white/20 -mt-6">
+                <h3 className="text-7xl md:text-6xl font-bold uppercase text-white/20 -mt-6">
                     (Process)
                 </h3>
             </Container>
