@@ -4,8 +4,8 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import SectionTitleMarquee from "./SectionTitleMarquee";
-import { ArrowRight, Check } from "lucide-react"; 
-import { FaGithub } from "react-icons/fa"; 
+import { ArrowRight, Check } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -14,6 +14,51 @@ const Projects = () => {
     const stickyCardsData = [
         {
             index: 1,
+            title: "RepoNavigator-AI",
+            image:
+                "/images/repo-ai.png",
+            description:
+                "A Dual Agent tool that summarises any github repo in mintues with clean architecture and a helper which you can chat with.",
+            keyPoints: [
+                "Repp Summarizer",
+                "Dynamic Dashbaord with many features for tracking history and tokens",
+                "Mermaid for arch. diagrams",
+            ],
+            techStack: ["Next.js", "Typescripts", "Gemini API", "Groq API", "MongoDB"],
+            githubUrl: "https://github.com/Abhinav-0709/reponavigator-ai",
+        },
+        {
+            index: 2,
+            title: "ScopeLock-Beta",
+            image:
+                "/images/scopelock-beta.png",
+            description:
+                "A tools for the freelancer to fight back the scope creep",
+            keyPoints: [
+                "Ready made PDF download option",
+                "GSAP ScrollTrigger animations",
+                "Powered by Gemini's API",
+            ],
+            techStack: ["Next.js", "TypeScript", "GSAP", "Gemini API"],
+            githubUrl: "https://github.com/Abhinav-0709/scopelock-beta",
+        },
+        {
+            index: 3,
+            title: "Portfolio Website",
+            image:
+                "/images/portfolio.png",
+            description:
+                "This very portfolio, built with 3D animations, smooth transitions, and GSAP motion effects.",
+            keyPoints: [
+                "Lenis smooth scroll",
+                "GSAP ScrollTrigger animations",
+                "React Three Fiber 3D models",
+            ],
+            techStack: ["Next.js", "TypeScript", "GSAP", "Three.js"],
+            githubUrl: "https://github.com/Abhinav-0709/portfolio",
+        },
+        {
+            index: 4,
             title: "CampusCopilot",
             image:
                 "/images/campus-copilot.png",
@@ -26,51 +71,6 @@ const Projects = () => {
             ],
             techStack: ["Next.js", "Python", "LangChain", "Supabase"],
             githubUrl: "https://github.com/Abhinav-0709/campus-copilot",
-        },
-        {
-            index: 2,
-            title: "Portfolio Website",
-            image:
-                "/images/portfolio.png",
-            description:
-                "This very portfolio, built with 3D animations, smooth transitions, and GSAP motion effects.",
-            keyPoints: [
-                "Lenis smooth scroll",
-                "GSAP ScrollTrigger animations",
-                "React Three Fiber 3D models",
-            ],
-            techStack: ["Next.js", "TypeScript", "GSAP", "Three.js"],
-            githubUrl: "https://github.com/Abhinav-0709/portfolio", 
-        },
-        {
-            index: 3,
-            title: "PROJEX",
-            image:
-                "/images/projex.png",
-            description:
-                "A full-stack MERN task manager with daily task and project journal.",
-            keyPoints: [
-                "Task Maanager with true false values",
-                "Project journal document my progress for a project.",
-                "Dashdoard for managing tasks and projects.",
-            ],
-            techStack: ["MongoDB", "Express", "React", "Node.js"],
-            githubUrl: "https://github.com/Abhinav-0709/projex",
-        },
-        {
-            index: 4,
-            title: "BookVerse",
-            image:
-                "/images/bookverse.png",
-            description:
-                "A Book review platform for peoples to share their thoughts on different kind of books.",
-            keyPoints: [
-                "JWT Powered Login Setup",
-                "CRUD System directly from the database",
-                "Book Management System",
-            ],
-            techStack: ["MongoDB", "Express", "React", "Node.js"],
-            githubUrl: "https://github.com/Abhinav-0709/bookverse", 
         },
     ];
 
