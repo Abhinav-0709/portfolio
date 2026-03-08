@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
@@ -22,7 +22,7 @@ const Hero = () => {
         gsap.from(".hero-name-letter", {
             y: 100,
             opacity: 0,
-            stagger: 0.1, 
+            stagger: 0.1,
             duration: 0.75,
             ease: "power3.out",
         });
@@ -42,16 +42,16 @@ const Hero = () => {
                             {" "}
                             <TypeAnimation
                                 sequence={[
-                                    "Full-Stack Developer",
+                                    "Full-Stack Dev",
                                     2000,
-                                    "Designer",
+                                    "Automator",
                                     2000,
-                                    "AI Specialist",
+                                    "AI Engineer",
                                     2000,
                                 ]}
                                 wrapper="span"
                                 speed={50}
-                                className="text-white font-bold text-5xl " 
+                                className="text-white font-bold text-5xl "
                                 repeat={Infinity}
                             />
 
@@ -67,19 +67,19 @@ const Hero = () => {
                     <div className="animate-marquee whitespace-nowrap flex space-x-12">
                         <span className="text-black text-lg uppercase font-semibold">Developer</span>
                         <span className="text-black text-lg uppercase font-semibold">Designer</span>
-                        <span className="text-black text-lg uppercase font-semibold">Specialist</span>
+                        <span className="text-black text-lg uppercase font-semibold">Builder</span>
 
                         <span className="text-black text-lg uppercase font-semibold">Developer</span>
                         <span className="text-black text-lg uppercase font-semibold">Designer</span>
-                        <span className="text-black text-lg uppercase font-semibold">Specialist</span>
+                        <span className="text-black text-lg uppercase font-semibold">Builder</span>
 
                         <span className="text-black text-lg uppercase font-semibold">Developer</span>
                         <span className="text-black text-lg uppercase font-semibold">Designer</span>
-                        <span className="text-black text-lg uppercase font-semibold">Specialist</span>
+                        <span className="text-black text-lg uppercase font-semibold">Builder</span>
 
                         <span className="text-black text-lg uppercase font-semibold">Developer</span>
                         <span className="text-black text-lg uppercase font-semibold">Designer</span>
-                        <span className="text-black text-lg uppercase font-semibold">Specialist</span>
+                        <span className="text-black text-lg uppercase font-semibold">Builder</span>
                     </div>
                 </div>
 
