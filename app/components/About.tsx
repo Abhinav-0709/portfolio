@@ -21,27 +21,27 @@ gsap.registerPlugin(ScrollTrigger);
 const About = () => {
     const aboutSectionRef = useRef(null);
 
-    
+
     useGSAP(
         () => {
-        
+
             gsap.from(".about-title", {
                 scrollTrigger: {
                     trigger: aboutSectionRef.current,
-                    start: "top 80%", 
+                    start: "top 80%",
                     toggleActions: "play none none none",
                 },
                 opacity: 0,
                 y: 50,
                 duration: 0.6,
-                stagger: 0.2, 
+                stagger: 0.2,
                 ease: "power2.out",
             });
 
             gsap.from(".about-left-card", {
                 scrollTrigger: {
                     trigger: ".about-left-card",
-                    start: "top 85%", 
+                    start: "top 85%",
                     toggleActions: "play none none none",
                 },
                 opacity: 0,
@@ -59,7 +59,7 @@ const About = () => {
                 opacity: 0,
                 y: 100,
                 duration: 0.8,
-                delay: 0.2, 
+                delay: 0.2,
                 ease: "power2.out",
             });
 
@@ -70,7 +70,7 @@ const About = () => {
                     toggleActions: "play none none none",
                 },
                 opacity: 0,
-                x: -100, 
+                x: -100,
                 duration: 0.8,
                 ease: "power2.out",
             });
@@ -82,12 +82,12 @@ const About = () => {
                     toggleActions: "play none none none",
                 },
                 opacity: 0,
-                x: 100, 
+                x: 100,
                 duration: 0.8,
                 ease: "power2.out",
             });
         },
-        { scope: aboutSectionRef } 
+        { scope: aboutSectionRef }
     );
 
     return (
@@ -124,14 +124,14 @@ const About = () => {
                         shadow-black/40 
                        transition-all duration-300 hover:shadow-white/10"
                     >
-                        
+
                         <div
                             className="relative w-full h-64 bg-black rounded-2xl
                          flex items-center justify-center border border-white/10
-                         overflow-hidden" 
+                         overflow-hidden"
                         >
                             <Image
-                                src="/images/me.png" 
+                                src="/images/me.png"
                                 alt="A photo of Abhinav Gupta"
                                 fill
                                 className="object-contain"
@@ -149,7 +149,7 @@ const About = () => {
                             Hello I am Abhinav Gupta
                         </h3>
                         <p className="text-center text-white/60 mt-2">
-                            Full Stack Developer | Designer | AI Specialist
+                            Full Stack Developer | System Design | AI Engineer
                         </p>
                         <div className="flex justify-center gap-4 mt-6">
                             <a
@@ -202,7 +202,7 @@ const About = () => {
 
                         <div className="flex flex-wrap justify-center sm:justify-start gap-4 mt-8">
                             <div className="flex items-center gap-2 px-4 py-2 bg-black rounded-lg border border-white/10 text-white/70">
-                                <Figma className="w-5 h-5" /> Figma
+                                <Figma className="w-5 h-5" /> AI Engineer
                             </div>
                             <div className="flex items-center gap-2 px-4 py-2 bg-black rounded-lg border border-white/10 text-white/70">
                                 <PenTool className="w-5 h-5" /> UI/UX Design
@@ -212,47 +212,39 @@ const About = () => {
                             </div>
                         </div>
                         <hr className="border-white/10 my-8" />
-                        <div className="flex flex-col justify-center gap-2">
-
-                            <div
-                                className="flex justify-between items-center py-4 bg-black px-2
-                           rounded-md shadow-lg shadow-black 
-                           transition-all duration-300 "
-                            >
-                                <span className="text-sm uppercase text-white/50">
-                                    WEB DEV INTERN
-                                </span>
-                                <span className="font-medium text-white/90">VAULT OF CODE</span>
-                                <span className="text-sm text-white/50">AUG-2025</span>
+                        <div className="flex flex-col gap-4">
+                            <div className="flex gap-4 p-4 bg-black/40 rounded-xl border border-white/5 transition-all duration-300 hover:border-white/10 hover:bg-black/60">
+                                <span className="text-xs font-semibold text-white/40 mt-1">01 / AI</span>
+                                <div>
+                                    <h4 className="text-white font-semibold text-base">Agentic AI & LLMs</h4>
+                                    <p className="text-white/60 text-sm mt-1">Engineering autonomous workflows, RAG systems, and semantic tools with Gemini & OpenAI.</p>
+                                </div>
                             </div>
-
-                            <hr className="border-white/5" />
-
-                            
-                            <div
-                                className="flex justify-between items-center py-4 bg-black px-2 
-                           rounded-md  shadow-black
-                           transition-all duration-300 shadow-lg "
-                            >
-                                <span className="text-sm uppercase text-white/50">
-                                    AI/ML INTERN
-                                </span>
-                                <span className="font-medium text-white/90">
-                                    EDUNET FOUNDATION
-                                </span>
-                                <span className="text-sm text-white/50">MAY-2025</span>
+                            <div className="flex gap-4 p-4 bg-black/40 rounded-xl border border-white/5 transition-all duration-300 hover:border-white/10 hover:bg-black/60">
+                                <span className="text-xs font-semibold text-white/40 mt-1">02 / DEV</span>
+                                <div>
+                                    <h4 className="text-white font-semibold text-base">Full Stack Architecture</h4>
+                                    <p className="text-white/60 text-sm mt-1">Building modular, type-safe web systems using React, Next.js, Node.js, and SQL/NoSQL databases.</p>
+                                </div>
+                            </div>
+                            <div className="flex gap-4 p-4 bg-black/40 rounded-xl border border-white/5 transition-all duration-300 hover:border-white/10 hover:bg-black/60">
+                                <span className="text-xs font-semibold text-white/40 mt-1">03 / DESIGN</span>
+                                <div>
+                                    <h4 className="text-white font-semibold text-base">Design & Interactions</h4>
+                                    <p className="text-white/60 text-sm mt-1">Crafting polished interfaces with Figma, GSAP, and Three.js for seamless user journeys.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="flex flex-col gap-8 mt-20">
-                   
+
                     <div className="skills-scroller-languages flex items-center gap-4">
                         <InfiniteSkillsScroller type="languages" direction="right" />
                     </div>
 
-                   
+
                     <div className="skills-scroller-frameworks flex items-center gap-4">
                         <InfiniteSkillsScroller type="frameworks" direction="left" />
                     </div>

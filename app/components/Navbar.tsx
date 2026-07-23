@@ -29,14 +29,17 @@ const Navbar = () => {
                     </Link>
 
                     <div className="hidden md:flex gap-6 text-gray-400">
+                        <Link href="#about" className="hover:text-white transition-colors">
+                            About
+                        </Link>
+                        <Link href="#experience" className="hover:text-white transition-colors">
+                            Experience
+                        </Link>
                         <Link
                             href="#project"
                             className="hover:text-white transition-colors"
                         >
                             Projects
-                        </Link>
-                        <Link href="#about" className="hover:text-white transition-colors">
-                            About
                         </Link>
                         <Link
                             href="#contact"
@@ -92,18 +95,25 @@ const Navbar = () => {
 
                 <div className="flex flex-col items-center gap-8 mt-10">
                     <Link
-                        href="#project"
-                        className="text-2xl text-gray-300 hover:text-white transition-colors"
-                        onClick={closeMenu}
-                    >
-                        Projects
-                    </Link>
-                    <Link
                         href="#about"
                         className="text-2xl text-gray-300 hover:text-white transition-colors"
                         onClick={closeMenu}
                     >
                         About
+                    </Link>
+                    <Link
+                        href="#experience"
+                        className="text-2xl text-gray-300 hover:text-white transition-colors"
+                        onClick={closeMenu}
+                    >
+                        Experience
+                    </Link>
+                    <Link
+                        href="#project"
+                        className="text-2xl text-gray-300 hover:text-white transition-colors"
+                        onClick={closeMenu}
+                    >
+                        Projects
                     </Link>
                     <Link
                         href="#contact"
